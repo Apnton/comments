@@ -35,8 +35,8 @@ const getClassNames = (fieldName) => {
             @click="sortBy('users.email')">Email
         </div>
         <div
-            :class="[getClassNames('created_at'), 'comment-sort__label']"
-            @click="sortBy('created_at')">Created
+            :class="[getClassNames('comments.created_at'), 'comment-sort__label']"
+            @click="sortBy('comments.created_at')">Created
         </div>
     </div>
 </template>

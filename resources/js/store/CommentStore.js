@@ -14,7 +14,7 @@ export const useCommentStore = defineStore('commentStore', {
             file: null
         },
         params: {
-            order_by: 'created_at',
+            order_by: 'comments.created_at',
             direction: 'desc',
             limit: 25,
             page: 1

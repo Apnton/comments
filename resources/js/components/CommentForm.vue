@@ -105,6 +105,11 @@ const storeComment = async () => {
                 v-model="commentStore.form.message"
             >
             </VueEditor>
+          <span
+              class="form__error"
+              v-for="error in v$.message.$errors">
+                {{ error.$message }}
+            </span>
         </div>
 
         <div class="form__row">

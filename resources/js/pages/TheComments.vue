@@ -1,6 +1,6 @@
 <script setup>
 import {onMounted} from 'vue';
-import Comment from '@/Components/Comment.vue';
+import Comment from '@/components/Comment.vue';
 import CommentForm from '@/components/CommentForm.vue';
 import CommentSort from '@/components/CommentSort.vue';
 import {useCommentStore} from '@/store/CommentStore.js';

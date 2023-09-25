@@ -23,7 +23,7 @@ class CommentValidationRequest extends FormRequest
     {
         return [
             'direction' => 'nullable|in:asc,desc',
-            'order_by'  => 'nullable|in:users.name,users.email,created_at',
+            'order_by'  => 'nullable|in:users.name,users.email,comments.created_at',
             'limit'     => 'nullable|integer',
         ];
     }
