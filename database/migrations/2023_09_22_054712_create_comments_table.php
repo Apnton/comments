@@ -24,10 +24,6 @@ return new class extends Migration
                 ->on('users')
                 ->cascadeOnDelete();
 
-            $table->foreign('parent_id')
-                ->references('id')
-                ->on('comments')
-                ->cascadeOnDelete();
         });
     }
 
