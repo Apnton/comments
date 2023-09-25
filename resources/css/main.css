@@ -1,0 +1,97 @@
+@import './reset.css';
+
+:root {
+    --sky: rgb(125 211 252);
+    --sky-100: rgb(224 242 254);
+    --gray: rgb(209 213 219);
+    --white: #ffffff;
+    --rose: rgb(225 29 72);
+    --indigo: rgb(21,31,50);
+}
+
+html {
+    box-sizing: border-box;
+    line-height: 1.2;
+    font-size: 10px;
+    color: #000000;
+    height: 100%;
+}
+
+body {
+    padding-top: 64px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.wrapper-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.centered {
+    text-align: center;
+}
+
+textarea,
+input {
+    font-family: inherit;
+    font-size: inherit;
+
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+a {
+    color: var(--sky);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.ql-syntax {
+    padding: 1.6rem;
+    border-radius: 0.8rem;
+    color: var(--white);
+    background-color: var(--indigo);
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+
+
+
+
